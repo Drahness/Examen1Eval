@@ -1,5 +1,6 @@
 package com.example.examen1eval;
 
+import androidx.annotation.LayoutRes;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -7,19 +8,27 @@ import androidx.appcompat.widget.Toolbar;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.ViewStub;
 
 public abstract class MainMenu extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(getContentView());
+        setContentView(R.layout.activity_main);
+
+        ViewStub stub = findViewById(R.id.viewstub_include);
+
+        stub.setLayoutResource(getActivityLayout());
+        stub.inflate();
+
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
     }
 
-    protected abstract int getContentView(); /*{
+    @LayoutRes
+    protected abstract int getActivityLayout(); /*{
         return R.layout.activity_main;
     }*/
     @Override

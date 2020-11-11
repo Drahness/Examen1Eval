@@ -9,5 +9,5 @@
         android:title="@string/toolbar_activity_1_string" />
     <item
         android:id="@+id/activity_2_toolbar"
-        android:title="@string/toolbar_activity_1_string" />
+        android:title="@string/toolbar_activity_2_string" />
 </menu>
