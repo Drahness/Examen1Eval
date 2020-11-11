@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Examen1Eval</string>
+    <string name="toolbar_home_string">Home</string>
+    <string name="toolbar_activity_2_string">Activity 2</string>
+    <string name="toolbar_activity_1_string">Activity 1</string>
+
+</resources>

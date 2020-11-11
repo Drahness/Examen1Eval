@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home_toolbar"
+        android:title="@string/toolbar_home_string" />
+    <item
+        android:id="@+id/activity_1_toolbar"
+        android:title="@string/toolbar_activity_1_string" />
+    <item
+        android:id="@+id/activity_2_toolbar"
+        android:title="@string/toolbar_activity_1_string" />
+</menu>
