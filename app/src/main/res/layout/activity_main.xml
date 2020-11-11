@@ -19,9 +19,9 @@
 
     <include
         android:id="@+id/include"
-        layout="@layout/activity_home"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        layout="@layout/activity_inflator"
+        android:layout_width="401dp"
+        android:layout_height="672dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar" />

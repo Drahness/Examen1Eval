@@ -2,9 +2,12 @@ package com.example.examen1eval;
 
 import androidx.annotation.LayoutRes;
 import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -16,15 +19,11 @@ public abstract class MainMenu extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         ViewStub stub = findViewById(R.id.viewstub_include);
-
         stub.setLayoutResource(getActivityLayout());
         stub.inflate();
-
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
     }
 
     @LayoutRes
@@ -57,15 +56,18 @@ public abstract class MainMenu extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
+        Intent intent = new Intent();
+        Bundle b = new Bundle();
         if(id == R.id.home_toolbar) {
-
+            intent.setClass(this,HomeActivity.class);
         }
         else if(id == R.id.activity_1_toolbar) {
-
+            intent.setClass(this,Activity_1.class);
         }
         else if(id == R.id.activity_2_toolbar) {
-
+            intent.setClass(this,Activity_2.class);
         }
+        startActivity(intent,b);
         return super.onOptionsItemSelected(item);
     }
 }
