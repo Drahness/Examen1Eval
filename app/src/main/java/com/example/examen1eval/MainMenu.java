@@ -2,12 +2,10 @@ package com.example.examen1eval;
 
 import androidx.annotation.LayoutRes;
 import androidx.annotation.NonNull;
-import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -62,10 +60,10 @@ public abstract class MainMenu extends AppCompatActivity {
             intent.setClass(this,HomeActivity.class);
         }
         else if(id == R.id.activity_1_toolbar) {
-            intent.setClass(this,Activity_1.class);
+            intent.setClass(this, MyMath.class);
         }
         else if(id == R.id.activity_2_toolbar) {
-            intent.setClass(this,Activity_2.class);
+            intent.setClass(this, MyPlaylist.class);
         }
         startActivity(intent,b);
         return super.onOptionsItemSelected(item);

@@ -4,5 +4,18 @@
     <string name="toolbar_activity_2_string">Activity 2</string>
     <string name="toolbar_activity_1_string">Activity 1</string>
     <string name="examen">Examen 1 Evaluacion</string>
-
+    <string-array name="autores">
+        <item>Mozart</item>
+        <item>Fanny Mendelssohn</item>
+        <item>Beethoven</item>
+        <item>Clara Schumann</item>
+        <item>Paganini</item>
+    </string-array>
+    <string-array name="songs">
+        <item>Clarinet concert</item>
+        <item>Nocturno en G minor</item>
+        <item>Moonlight sonata</item>
+        <item>Toccatina en A minor</item>
+        <item>Violin concert</item>
+    </string-array>
 </resources>
